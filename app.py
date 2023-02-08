@@ -5,7 +5,7 @@ import longjob
 
 
 app = Flask(__name__)
-app.config["EXECUTOR_TYPE"] = "process"
+app.config["EXECUTOR_TYPE"] = "process"  # 按理说应该用进程版
 executor = Executor()
 executor.init_app(app)
 
